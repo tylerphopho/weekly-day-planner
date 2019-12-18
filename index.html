@@ -5,21 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="jumbotron">
         <h1 class="display-3 text-center">Work-Day Planner</h1>
-        <p class="text-center">A simple container to schedule you every day tasks.</p>
-        <hr class="my-2">
-        <p>More info</p>
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Jumbo action name</a>
-        </p>
+        <p class="text-center">A simple container to schedule your every day tasks.</p>
+        <div id="displayMoment" class="text-center"></div>
     </div>
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="input-group mb-3">
+              <span class="input-group-text hide">9:00 AM</span>
+                <input type="text" class="form-control" placeholder="9:00 AM" aria-label="Recipient's username" aria-describedby="set-button-1">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-primary" type="button" id="set-button-1">Set</button>
+                  <button class="btn btn-outline-info" type="button" id="change-button-2">Change</button>
+                </div>
+              </div>
+        </div>
+        <div class="row">
+            <div class="input-group mb-3">
+              <span class="input-group-text hide">10:00 AM</span>
+                <input type="text" class="form-control" placeholder="10:00 AM" aria-label="Recipient's username" aria-describedby="set-button-2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-primary" type="button" id="set-button-2">Set</button>
+                  <button class="btn btn-outline-info" type="button" id="change-button-2">Change</button>
+                </div>
+              </div>
+        </div>
+        <div class="row">
+            <div class="input-group mb-3">
+              <span class="input-group-text hide">11:00 AM</span>
+                <input type="text" class="form-control" placeholder="11:00 AM" aria-label="Recipient's username" aria-describedby="set-button-3">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-primary" type="button" id="set-button-3">Set</button>
+                  <button class="btn btn-outline-info" type="button" id="change-button-3">Change</button>
+                </div>
+              </div>
+        </div>
+        <div class="row">
+            <div class="input-group mb-3">
+              <span class="input-group-text hide">12:00 PM</span>
+                <input type="text" class="form-control" placeholder="12:00 PM" aria-label="Recipient's username" aria-describedby="set-button-4">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-primary" type="button" id="set-button-4">Set</button>
+                  <button class="btn btn-outline-info" type="button" id="change-butotn-4">Change</button>
+                </div>
+              </div>
+        </div>
+        <div class="row">
+            <div class="input-group mb-3">
+              <span class="input-group-text hide">1:00 PM</span>
+                <input type="text" class="form-control" placeholder="1:00 PM" aria-label="Recipient's username" aria-describedby="set-button-5">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-primary" type="button" id="set-button-5">Set</button>
+                  <button class="btn btn-outline-info" type="button" id="change-button-5">Change</button>
+                </div>
+              </div>
+        </div>
+        <div class="row">
+            <div class="input-group mb-3">
+              <span class="input-group-text hide">2:00 PM</span>
+                <input type="text" class="form-control" placeholder="2:00 PM" aria-label="Recipient's username" aria-describedby="set-button-6">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-primary" type="button" id="set-button-6">Set</button>
+                  <button class="btn btn-outline-info" type="button" id="change-button-6">Change</button>
+                </div>
+              </div>
+        </div>
+        <div class="row">
+            <div class="input-group mb-3">
+              <span class="input-group-text hide">3:00 PM</span>
+                <input type="text" class="form-control" placeholder="3:00 PM" aria-label="Recipient's username" aria-describedby="set-button-7">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-primary" type="button" id="set-button-7">Set</button>
+                  <button class="btn btn-outline-info" type="button" id="change-button-7">Change</button>
+                </div>
+              </div>
+        </div>
+        <div class="row">
+            <div class="input-group mb-3">
+              <span class="input-group-text hide">4:00 PM</span>
+                <input type="text" class="form-control" placeholder="4:00 PM" aria-label="Recipient's username" aria-describedby="set-button-8">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-primary" type="button" id="set-button-8">Set</button>
+                  <button class="btn btn-outline-info" type="button" id="change-button-8">Change</button>
+                </div>
+              </div>
+        </div>
+        <div class="row">
+            <div class="input-group mb-3">
+              <span class="input-group-text hide">5:00 PM</span>
+                <input type="text" class="form-control" placeholder="5:00 PM" aria-label="Recipient's username" aria-describedby="set-button-9">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-primary" type="button" id="set-button-9">Set</button>
+                  <button class="btn btn-outline-info" type="button" id="change-button-9">Change</button>
+                </div>
+              </div>
+        </div>
+    </div>
+
 </body>
  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ <script src="assets/script/javascript.js"></script>
+ <script src="lib/moment/moment.min.js"></script>
+ <script>
+   const m = moment();
+   moment().format("dddd , MMMM Do YYYY");
+   console.log(m.toString());
+ </script>
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

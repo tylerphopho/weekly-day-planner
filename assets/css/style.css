@@ -1,0 +1,21 @@
+#displayMoment {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.display-3{
+    font-size: 100px;
+}
+
+.input-group-text {
+    width: 90px;
+}
+
+.form-control {
+    width: 80px;
+    height: 50px;
+}
+
+.hide {
+    display: none;
+}
