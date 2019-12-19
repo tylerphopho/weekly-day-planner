@@ -1,5 +1,6 @@
-var setBtn = $("#submit-button");
+var setBtn = $("#set-button-");
 var changeBtn = $("#change-button");
+
 
 
 
@@ -8,10 +9,18 @@ var changeBtn = $("#change-button");
 
 $(document).ready(function() {
 
-var nowMoment = moment().format("dddd , MMMM Do YYYY");
+setBtn.on("click", setEvent);
 
+//Display today's date
+var nowMoment = moment().format("dddd , MMMM Do YYYY");
 
 var eDisplayMoment = document.getElementById("displayMoment");
 eDisplayMoment.innerHTML = nowMoment;
+
+
+function setEvent() {
+    
+} 
+
 
 });
