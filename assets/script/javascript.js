@@ -1,4 +1,6 @@
-var setBtn = 
+var setBtn = $("#submit-button");
+var changeBtn = $("#change-button");
+
 
 
 
