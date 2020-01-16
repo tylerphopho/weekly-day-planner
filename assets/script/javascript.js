@@ -1,26 +1,8 @@
-var setBtn = $("#set-button-");
-var changeBtn = $("#change-button");
+var current = $("#current-day");
 
+$(document).ready(function(){
+    var m = moment();
+    moment().format("dddd , MMMM Do YYYY");
+    console.log(m.toString());
+})
 
-
-
-
-
-
-$(document).ready(function() {
-
-setBtn.on("click", setEvent);
-
-//Display today's date
-var nowMoment = moment().format("dddd , MMMM Do YYYY");
-
-var eDisplayMoment = document.getElementById("displayMoment");
-eDisplayMoment.innerHTML = nowMoment;
-
-
-function setEvent() {
-    
-} 
-
-
-});
