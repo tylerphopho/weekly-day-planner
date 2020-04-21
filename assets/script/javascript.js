@@ -7,7 +7,7 @@ $(document).ready(function(){
     var currentHour = parseInt(moment().format("H"))
     console.log(currentHour)
 
-    var times = [
+    var timeValues = [
         {time: "9 AM", value: '9'},
         {time: "10 AM", value: '10'},
         {time: "11 AM", value: '11'},
@@ -18,12 +18,12 @@ $(document).ready(function(){
         {time: "4 PM", value: '16'},
         {time: "5 PM", value: '17'},
     ]
-    for (var i = 0; i < times.length; i++) {
+    for (var i = 0; i < timeValues.length; i++) {
         savedText = localStorage.getItem(i) || ""
         
         // Creates a div tag for the time
         var timeRow = $("<div>");
-        timeRow.addClass("<row>");
+        timeRow.addClass("row");
         timeblocks.append(timeRow);
         // Appends time, the text area, and button.
         timeRow.append(hourRow, textRow, button);
@@ -31,12 +31,13 @@ $(document).ready(function(){
         // Creates div to hold current hour
         var hourRow = $("<div>");
         hourRow.addClass("time col-md-1");
-        hourRow.html(`<p class="hour-text">${times[i].time}</p>`);
+        hourRow.html(`<p class="hour-text">${timeValues[i].time}</p>`);
 
         // Creates div to hold text area
         var textRow = $("<div>");
         textRow.addClass("col-md-10");
-        textRow.attr("value", times[i].milTime);
+        textRow.attr("value", timeValues[i].milTime);
+        
         var textArea = $("<textarea>");
         textArea.text(savedText);
         textRow.append(textArea);
